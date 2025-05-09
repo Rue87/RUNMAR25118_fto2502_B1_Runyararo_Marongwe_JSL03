@@ -105,11 +105,11 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
 }
 
 const updatedTasks = addNewTask(initialTasks);
-console.log(updatedTasks);
+console.log("All tasks:", updatedTasks);
 
 function getCompletedTasks(tasks){
   return tasks.filter(task => task.status === "done")
 
 }
 const completedTasks = getCompletedTasks(updatedTasks);
-console.log(completedTasks);
+console.log("Completed tasks:", completedTasks);
