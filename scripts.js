@@ -96,11 +96,9 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
       status: status,
     };
     newTasks.push(newTask);
-
-    if(i === numberOfNewTasks - 1){
-      alert("There are enough tasks on your board,please check them in your console.");
-    } 
   }
+  
+  alert("There are enough tasks on your board, please check them in your console.");
 
   const updatedTasks = initialTasks.concat(newTasks); 
   return updatedTasks;
@@ -108,3 +106,10 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
 
 const updatedTasks = addNewTask(initialTasks);
 console.log(updatedTasks);
+
+function getCompletedTasks(tasks){
+  return tasks.filter(task => task.status === "done")
+
+}
+const completedTasks = getCompletedTasks(updatedTasks);
+console.log(completedTasks);
