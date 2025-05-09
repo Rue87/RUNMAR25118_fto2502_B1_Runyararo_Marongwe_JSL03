@@ -80,15 +80,22 @@ const tasksWithoutDescription = initialTasks.map((task) => ({
 // Print the mapped tasks
 console.log(tasksWithoutDescription);
 
+// Function to add new tasks based on user input
 function addNewTask(initialTasks, numberOfNewTasks = 3){
   const newTasks = [];
+
+  //Find the ID of the last task so as to ensure new tasks have unique IDs
   const lastId =  initialTasks.length ?initialTasks[initialTasks.length - 1].id:0; // Get the last ID from the initial tasks
 
+//loop to ask the user to enter task one at a time
   for (let i = 0; i < numberOfNewTasks; i++) {
     const title = prompt("Enter task title:");
     const description = prompt("Enter task description:");
     let status = prompt("Enter task status (todo, doing, done):");
+
+   
     
+   //Create a new task object with a unique ID
     const newTask = {
       id: lastId + i + 1, // Increment the last ID for each new task
       title: title,
@@ -97,19 +104,23 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
     };
     newTasks.push(newTask);
   }
-  
+
   alert("There are enough tasks on your board, please check them in your console.");
 
+  // Combine the initial tasks with the new tasks 
   const updatedTasks = initialTasks.concat(newTasks); 
   return updatedTasks;
 }
-
+// Call the addNewTask function get the updated task list, the add all tasks to the console
 const updatedTasks = addNewTask(initialTasks);
 console.log("All tasks:", updatedTasks);
 
+// Filter and return only the tasks that have a status of "done"
+// Function to get completed tasks
 function getCompletedTasks(tasks){
   return tasks.filter(task => task.status === "done")
 
 }
+// Call the getCompletedTasks function and log the result
 const completedTasks = getCompletedTasks(updatedTasks);
 console.log("Completed tasks:", completedTasks);
