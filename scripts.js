@@ -82,7 +82,7 @@ console.log(tasksWithoutDescription);
 
 function addNewTask(initialTasks, numberOfNewTasks = 3){
   const newTasks = [];
-  const lastId = initialTasks[initialTasks.length - 1].id; // Get the last ID from the initial tasks
+  const lastId =  initialTasks.length ?initialTasks[initialTasks.length - 1].id:0; // Get the last ID from the initial tasks
 
   for (let i = 0; i < numberOfNewTasks; i++) {
     const title = prompt("Enter task title:");
@@ -96,13 +96,15 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
       status: status,
     };
     newTasks.push(newTask);
-  } 
+
+    if(i === numberOfNewTasks - 1){
+      alert("There are enough tasks on your board, please check them in the console");
+    } 
+  }
+
   const updatedTasks = initialTasks.concat(newTasks); 
   return updatedTasks;
 }
 
 const updatedTasks = addNewTask(initialTasks);
 console.log(updatedTasks);
-
-
-  
