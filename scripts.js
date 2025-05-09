@@ -98,7 +98,7 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
     newTasks.push(newTask);
 
     if(i === numberOfNewTasks - 1){
-      alert("There are enough tasks on your board, please check them in the console");
+      alert("There are enough tasks on your board,please check them in your console.");
     } 
   }
 
