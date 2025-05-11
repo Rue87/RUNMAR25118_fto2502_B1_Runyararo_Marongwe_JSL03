@@ -27,10 +27,10 @@ This project offers basic logic in JavaScript for the management of a collection
 
 ## Challenges and Solutions
 
-- **Challenge:**Ensuring that new data (tasks) are correctly structured and intergrate with existing data, including generating unique identifiers.
-**Solution:**I implemented clear object structures and logic for unique ID creation.
+- **Challenge:** Ensuring that new data (tasks) are correctly structured and intergrate with existing data, including generating unique identifiers.
+- **Solution:** I implemented clear object structures and logic for unique ID creation.
 
-**Specific Challenge Encountered:**Rapid Sequential Commits
+**Specific Challenge Encountered:** Rapid Sequential Commits
 
 During the initial stages of development, I encountered a challenge related  to version control. I attempted to commit 3 changes sequentially, one         immediately after the other.I realised that commits should ideally represent a single, logical unit of work and therefore I should commit after making a change.
 
@@ -40,7 +40,7 @@ During the initial stages of development, I encountered a challenge related  to 
 
 -  This project primarily consists of JavaScript code and does not require a specific installation process beyond having a JavaScript runtime environment(web browser).
 
- ##**Usage:**
+## **Usage:**
 **In a Web Browser:**
 1. Save the provided JavaScript code as an HTML file (e.g., `index.html`)  and include the JavaScript within `<script>` tags.
 2. Open the `index.html` file in your web browser.
