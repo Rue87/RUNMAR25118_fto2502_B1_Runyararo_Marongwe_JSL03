@@ -1,43 +1,55 @@
-# JSL02 Challenge – Solution Code
+# Task Management Logic in JavaScript
 
 ## Overview
 
-This repository provides the **official solution code for the JSL02 challenge**. It is meant to help students verify their understanding of JavaScript fundamentals, particularly **user input validation**, **conditional logic**, and **basic output to the console**.
+This project offers basic logic in JavaScript for the management of a collection of tasks. It consists of:
+- Transforming task objects in such a way that the description is omitted.
+- Adding required new tasks using input from the user and assigning a unique ID.
+- Filtering tasks to fetch only those which are marked as done.
 
-Students should use this solution to:
+## Languages used
 
-- Review their approach to handling user input via `prompt()`
-- Compare logic used for validating task statuses (`todo`, `doing`, `done`)
-- Understand how to handle multiple conditional outputs
-- Improve their code readability and structure before continuing to **JSL03**
+- JavaScript
 
-## Features Covered
+## Features
 
-The solution demonstrates how to:
+### Created Features
 
-- Prompt the user for **titles**, **descriptions**, and **status** of two tasks
-- Validate the entered status to ensure it's one of the allowed options
-- Display a **summary in the console** if a task is marked `"done"`
-- Log a motivational message if **neither** task is completed
+**Projection of Tasks by (Title and Status):** For retrieval of task titles and statuses, applies implementation of `.map()` method to yield an array of objects consisting of titles and statuses of the tasks without including the description.
 
-## Structure
+**Addition of Tasks:** Offers functionality `addNewTask` which takes care of adding new tasks with title description and status. Assigns IDs for new tasks which are added to old task lists thereby giving unique IDs.
 
-The project includes:
+**Completed Task Filtering:** Includes a function `getCompletedTasks` that utilises the`.filter()` method to return a new array constaining only the tasks with a status of "done".
 
-- ✅ Interactive JavaScript to collect and validate user input
-- 🧠 Clear loops for input validation
-- 🔍 Simple logic that checks and logs completion status
-- 💬 Console messages to give meaningful feedback to the user
+### Updated Features
 
-## How to Use This Solution
+**ID Creation:** The `addNewTask` function now reliably determines the ID for new tasks by checking the ID of the last existing task, ensuring sequential and unique IDs.
 
-1. Open the project folder with **Live Server** in VS Code, then open your browser's **developer console** to view the outputs.
-2. Compare the input handling, validation, and logging logic to your own implementation.
-3. Reflect on any areas where your code could be **cleaner**, **more robust**, or **easier to read**.
-4. Make necessary improvements before continuing to JSL03.
+## Challenges and Solutions
 
----
+**Challenge:**Ensuring that new data (tasks) are correctly structured and intergrate with existing data, including generating unique identifiers.
+**Solution:**I implemented clear object structures and logic for unique ID creation.
 
-## License
+**Specific Challenge Encountered:**Rapid Sequential Commits
+During the initial stages of development, I encountered a challenge related to version control. I attempted to commit 3 changes sequentially, one immediately after the other.I realised that commits should ideally represent a single, logical unit of work and therefore I should commit after making a change.
 
-This solution code is provided for **educational use only**.
+- This experience reinforced the value of thoughtful and well-organized commits for effective collaboration and maintainability of the project's history.
+
+## Setup Instructions
+
+This project primarily consists of JavaScript code and does not require a specific installation process beyond having a JavaScript runtime environment(web browser).
+
+ **Usage:**
+  * **In a Web Browser:**
+        1.  Save the provided JavaScript code as an HTML file (e.g., `index.html`) and include the JavaScript within `<script>` tags.
+        2.  Open the `index.html` file in your web browser.
+        3.  Open the browser's developer console (usually by pressing F12) to see the output of `console.log()` and interact with the `prompt()` dialogues.
+**Important:** The task status should be entered in lowercase (e.g., "todo", "doing", "done") for the application to correctly identify and process the status, particularly for filtering completed tasks.
+
+- P.S. This project is open for collaboration. My contacts are just below.
+
+##Contact
+
+[Runyararo Marongwe/mrunya87@gmail.com] [https://github.com/Rue87]
+
+
