@@ -1,4 +1,4 @@
-# Task Management Logic in JavaScript"
+# Console-Based Task Management Logic in JavaScript
 
 ## Overview
 
