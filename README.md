@@ -41,9 +41,9 @@ This project primarily consists of JavaScript code and does not require a specif
 
  **Usage:**
   * **In a Web Browser:**
-        1.  Save the provided JavaScript code as an HTML file (e.g., `index.html`) and include the JavaScript within `<script>` tags.
-        2.  Open the `index.html` file in your web browser.
-        3.  Open the browser's developer console (usually by pressing F12) to see the output of `console.log()` and interact with the `prompt()` dialogues.
+      1.  Save the provided JavaScript code as an HTML file (e.g., `index.html`) and include the JavaScript within `<script>` tags.
+      2.  Open the `index.html` file in your web browser.
+      3.  Open the browser's developer console (usually by pressing F12) to see the output of `console.log()` and interact with the `prompt()` dialogues.
 **Important:** The task status should be entered in lowercase (e.g., "todo", "doing", "done") for the application to correctly identify and process the status, particularly for filtering completed tasks.
 
 - P.S. This project is open for collaboration. My contacts are just below.
