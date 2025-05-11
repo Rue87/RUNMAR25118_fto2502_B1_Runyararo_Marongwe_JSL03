@@ -85,7 +85,7 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
   const newTasks = [];
 
   //Find the ID of the last task so as to ensure new tasks have unique IDs
-  const lastId =  initialTasks.length ?initialTasks[initialTasks.length - 1].id:0; // Get the last ID from the initial tasks
+  const lastId =  initialTasks.length ?initialTasks[initialTasks.length - 1].id:0;
 
 //loop to ask the user to enter task one at a time
   for (let i = 0; i < numberOfNewTasks; i++) {
@@ -93,8 +93,6 @@ function addNewTask(initialTasks, numberOfNewTasks = 3){
     const description = prompt("Enter task description:");
     let status = prompt("Enter task status (todo, doing, done):");
 
-   
-    
    //Create a new task object with a unique ID
     const newTask = {
       id: lastId + i + 1, // Increment the last ID for each new task
